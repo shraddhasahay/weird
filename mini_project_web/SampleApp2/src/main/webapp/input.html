@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker Algorithm</title>
+    <link rel=" stylesheet" href="css/main.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+</style>
+<body>
+  
+    <div class="container1">
+      <h1 class="text-center">FOR 5 PROCESSES AND 4 RESOURCES</h1>  
+     </div>
+    <div class="container">
+        <div class="well well-lg">
+          <h1 class="text-center">MAX MATRIX</h1>
+          <p>Enter your input</p>
+          
+          <form id="inputField" role="form" class="text-center" method=get action=BankerAlgo>
+            <input type="text" id="m" size="3" name="m">
+            <input type="text" id="m" size="3" name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <br>
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <br>
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <br>
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <br>
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <input type="text" id="m" size="3"name="m">
+            <br>
+            <br>
+          <h1 class="text-center">ALLOCATION  MATRIX</h1>
+          <p>Enter your input</p>
+         
+            <input type="text" name="a" size="3" >
+            <input type="text" name="a" size="3" >
+            <input type="text" name="a" size="3" >
+            <input type="text" name="a" size="3" >
+            <br>
+            <input type="text" name="a" size="3" >
+            <input type="text" name="a" size="3" >
+            <input type="text" name="a" size="3" >
+            <input type="text" name="a" size="3" >
+            <br>
+            <input type="text" name="a" size="3" >
+            <input type="text" name="a" size="3">
+            <input type="text" name="a" size="3">
+            <input type="text" name="a" size="3">
+            <br>
+            <input type="text" name="a" size="3">
+            <input type="text" name="a" size="3">
+            <input type="text" name="a" size="3">
+            <input type="text" name="a" size="3">
+            <br>
+            <input type="text" name="a" size="3">
+            <input type="text" name="a" size="3">
+            <input type="text" name="a" size="3">
+            <input type="text" name="a" size="3">
+            <br>
+            <br>
+
+          <h1 class="text-center">AVAILABLE MATRIX</h1>
+          <p>Enter your input</p>
+         
+            <input type="text" name="av" size="3">
+            <input type="text" name="av" size="3">
+            <input type="text" name="av" size="3">
+            <input type="text" name="av" size="3">
+            <br>
+            <br>
+            <input type=submit value="Submit">
+            
+          
+          </form>
+          </div>
+          </div>      
+          <div class="w3-container w3-black w3-left w3-opacity w3-padding-15">
+          <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="index.html">Back</a></button>
+       </div>
+       <div class="w3-container w3-black w3-right w3-opacity w3-padding-15">
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="<%=request.getContextPath()%>/Result.jsp">Next</a></button>
+     </div>
+</body>
+</html>
